@@ -1,0 +1,28 @@
+.preloader{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--bgColor);
+  z-index: 10000000 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.preloader.hide{
+  opacity: 0;
+}
+.preloader .lottie_container svg{
+  height: 100px !important;
+  width: 100px !important;
+}

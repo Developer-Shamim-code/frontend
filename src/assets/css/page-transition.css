@@ -1,0 +1,19 @@
+.page_transition{
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000vw !important;
+  height: 1000vh !important;
+  background: #D9D3D0;
+  opacity: 0;
+  z-index: 99999;
+  -webkit-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  z-index: 99999999999 !important;
+}
+.page_transition.active{
+  opacity: 1;
+}

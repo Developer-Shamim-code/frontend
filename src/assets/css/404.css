@@ -1,0 +1,190 @@
+.not_found_page{
+  background: url('../images/bg-noise.png');
+  background-color: var(--bgColor);
+  background-repeat: repeat;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  background-size: 500px;
+  -webkit-animation: bg-noise-animation .2s linear infinite;
+          animation: bg-noise-animation .2s linear infinite;
+}
+
+.not_found_page .container{
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  height: max-content;
+}
+
+.not_found_page .container .card{
+  box-shadow: 0px 4px 10px rgba(43, 42, 42, 0.15);
+  border-radius: 0px 40px 0px 0px;
+  transform: rotate(-3deg);  
+  width: 688px;
+  height: 915.78px;
+  background: #A65644;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 748px){
+  .not_found_page .container .card{
+    width: calc(100% - 40px);
+    height: 700px;
+  }
+}
+@media screen and (max-width: 600px){
+  .not_found_page .container .card{
+    height: 600px;
+  }
+}
+@media screen and (max-width: 490px){
+  .not_found_page .container .card{
+    height: 530px;
+    width: calc(100% - 20px);
+  }
+}
+@media screen and (max-width: 400px){
+  .not_found_page .container .card{
+    height: 490px;
+    width: calc(100% - 20px);
+  }
+}
+.not_found_page .container .card h2{
+  font-family: Curricular Std;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 250px;
+  line-height: 200px;
+  color: #2B2A2A;
+}
+.not_found_page .container .card p{
+  font-family: Curricular Std;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  color: #2B2A2A;
+}
+.not_found_page .container a{
+  width: 526px;
+  height: 100px;
+  border: 5px solid #2B2A2A;
+  box-sizing: border-box;
+  border-radius: 100px;
+  color: #2B2A2A;
+  background: transparent;
+  display: flex !important;
+  align-items: center;
+  margin-top: 80px;
+  justify-content: center;
+  font-family: Curricular Std;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+}
+.not_found_page .container a:hover{
+  background: #2B2A2A;
+  margin: 0 !important;
+  transform: none !important;
+  margin-top: 80px !important;
+  color: #A65644;
+}
+.not_found_page .container a svg{
+  height: 53px;
+  margin-left: 20px;
+  fill: #2B2A2A;
+}
+.not_found_page .container a:hover svg{
+  fill: #A65644;
+}
+
+@media screen and (max-width: 700px){
+  .not_found_page .container .card h2{
+    font-size: 150px;
+    line-height: 150px;
+  }
+  .not_found_page .container .card p{
+    font-size: 40px;
+  }
+  .not_found_page .container a{
+    width: 420px;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .not_found_page .container a:hover{
+    margin: 0 !important;
+    margin-top: 40px !important;
+  }
+  .not_found_page .container a svg{
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .not_found_page .container .card h2{
+    font-size: 100px;
+    line-height: 100px;
+  }
+  .not_found_page .container .card p{
+    font-size: 30px;
+  }
+  .not_found_page .container a{
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+  .not_found_page .container a:hover{
+    margin: 0 !important;
+    margin-top: 30px !important;
+  }
+  .not_found_page .container a svg{
+    height: 30px;
+  }
+}
+@media screen and (max-width: 550px){
+  .not_found_page .container a{
+    width: 300px !important;
+    height: 60px !important;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .not_found_page .container .card h2{
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .not_found_page .container .card p{
+    font-size: 22px;
+  }
+  .not_found_page .container a{
+    width: 250px !important;
+    height: 50px !important;
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  .not_found_page .container a svg{
+    height: 20px;
+  }
+}
+@media screen and (max-width: 390px){
+  .not_found_page .container a{
+    padding: 0 20px;
+    width: unset !important;
+    height: 40px !important;
+    margin-top: 20px;
+    font-size: 18px;
+    border: 3px solid #2B2A2A;
+  }
+  .not_found_page .container a:hover{
+    margin: 0 !important;
+    margin-top: 20px !important;
+  }
+  .not_found_page .container a svg{
+    height: 17px;
+  }
+}

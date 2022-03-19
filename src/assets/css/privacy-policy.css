@@ -1,0 +1,85 @@
+.privacy_policy_page{
+  background: url('../images/bg-noise.png');
+  background-color: var(--bgColor);
+  background-repeat: repeat;
+  background-size: 500px;
+  -webkit-animation: bg-noise-animation .2s linear infinite;
+          animation: bg-noise-animation .2s linear infinite;
+}
+
+.privacy_policy_page .page_title{
+  font-family: var(--fontFamily1);
+  font-size: 70px;
+  line-height: 89px;
+  position: relative;
+  display: inline-block;
+  z-index: 10 !important;
+}
+.privacy_policy_page .page_title::after{
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: #88A5BF;
+  opacity: 1;
+  z-index: -1 !important;
+}
+
+@media screen and (max-width: 900px){
+  .privacy_policy_page .page_title{
+    font-size: 45px;
+    line-height: 57px;
+  }
+}
+@media screen and (max-width: 450px){
+  .privacy_policy_page .page_title{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .privacy_policy_page .page_title::after{
+    bottom: 4px;
+    height: 10px;
+  }
+}
+
+.privacy_policy_page .content{
+  margin-top: 30px;
+}
+
+.privacy_policy_page section{
+  margin-top: 20px;
+}
+.privacy_policy_page section .section_title{
+  font-family: var(--fontFamily1);
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+@media screen and (max-width: 450px){
+  .privacy_policy_page section .section_title{
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+.privacy_policy_page section p{
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  font-family: var(--fontFamily2);
+  margin-bottom: 20px;
+  max-width: 570px;
+}
+@media screen and (max-width: 450px){
+  .privacy_policy_page section p{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+
+.content{
+  text-align: initial!important;
+}
